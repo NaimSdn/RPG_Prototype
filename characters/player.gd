@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const speed = 100
+const speed : int = 250
 var movement : Vector2 = Vector2.ZERO
 var last_velocity: Vector2 = Vector2.ZERO
 var last_direction: String = "down"
