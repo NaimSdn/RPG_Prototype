@@ -28,16 +28,16 @@ func update_velocity() -> void:
 
 func update_animation() -> void:
 	if velocity.x > 0:
-		get_node("AnimatedSprite2D").play("walk_right")
+		$AnimatedSprite2D.play("walk_right")
 		last_direction = "right"
 	elif velocity.x < 0:
-		get_node("AnimatedSprite2D").play("walk_left")
+		$AnimatedSprite2D.play("walk_left")
 		last_direction = "left"
 	elif velocity.y > 0:
-		get_node("AnimatedSprite2D").play("walk_down")
+		$AnimatedSprite2D.play("walk_down")
 		last_direction = "down"
 	elif velocity.y < 0:
-		get_node("AnimatedSprite2D").play("walk_up")
+		$AnimatedSprite2D.play("walk_up")
 		last_direction = "up"
 	else:
-		get_node("AnimatedSprite2D").play("idle_" + last_direction)
+		$AnimatedSprite2D.play("idle_" + last_direction)
