@@ -1,7 +1,7 @@
 [gd_scene load_steps=26 format=3 uid="uid://dkoijpbt36osq"]
 
 [ext_resource type="Texture2D" uid="uid://drgiqln7a5ehl" path="res://assets/Knight/knight_idle.png" id="1_hwbb7"]
-[ext_resource type="Script" uid="uid://brxsn8tgnuwge" path="res://scripts/player.gd" id="1_mn00f"]
+[ext_resource type="Script" uid="uid://brxsn8tgnuwge" path="res://scripts/entity/player.gd" id="1_mn00f"]
 [ext_resource type="Texture2D" uid="uid://dmtt2u7kwjvgs" path="res://assets/Knight/knight_walk.png" id="2_pf73y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hwbb7"]
@@ -191,6 +191,7 @@ animations = [{
 size = Vector2(12, 8)
 
 [node name="Player" type="CharacterBody2D"]
+z_index = 3
 script = ExtResource("1_mn00f")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
